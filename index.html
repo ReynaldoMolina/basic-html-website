@@ -13,92 +13,96 @@
   <meta property="og:url" content="https://reynaldomolina.github.io/"> <meta property="og:image" content="https://reynaldomolina.github.io/_astro/profile-pic.IGFf9P05.jpg"> <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="Reynaldo Molina Simple Page">
   <title>Simple Website | Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <div>
-        <img src="" alt="Logo">
-        <p>Reynaldo Molina</p>
+  <main>
+    <header>
+      <nav>
+        <div class="header-left">
+          <img class="logo" src="./icons/letter-r.svg" alt="Logo">
+          <p class="header-title">Reynaldo Molina</p>
+        </div>
+        <ul class="header-right">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="/articles.html">Articles</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="cover">
+      <h1>Frontend Developer</h1>
+      <p>HTML only website with proper layout, no styling</p>
+    </section>
+  
+    <section class="container">
+      <div class="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li><a href="https://reynaldomolina.github.io/single-page-cv/">Single Page CV</a></li>
+          <li><a href="#">Calculator</a></li>
+          <li><a href="#">Quiz App</a></li>
+          <li><a href="#">Countdown Timer</a></li>
+          <li><a href="#">Product Upcoming page</a></li>
+        </ul>
       </div>
-      <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/projects.html">Projects</a></li>
-        <li><a href="/articles.html">Articles</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section>
-    <h1>Frontend Developer</h1>
-    <p>HTML only website with proper layout, no styling</p>
-  </section>
-
-  <section>
-    <div>
-      <h2>Projects</h2>
-      <ul>
-        <li><a href="https://reynaldomolina.github.io/single-page-cv/">Single Page CV</a></li>
-        <li><a href="#">Project 2</a></li>
-        <li><a href="#">Project 3</a></li>
-        <li><a href="#">Project 4</a></li>
-        <li><a href="#">Project 5</a></li>
-      </ul>
-    </div>
-
-    <div>
-      <div>
+  
+      <div class="experience">
         <h2>Work Experience</h2>
-        <p>roadmap.sh</p>
-        <p>Solved all the frontend projects</p>
-        <a href="#">Visit my profile</a>
+        <div class="experience-info">
+          <p>roadmap.sh</p>
+          <p>Solved all the frontend projects</p>
+          <a href="#">Visit my profile</a>
+        </div>
+        <div class="experience-info">
+          <p>OpenSource Work</p>
+          <p>Contributed to 2 opensource projects. Made my own projects with 10 GitHub stars.</p>
+          <a href="#">Visit my GitHub profile</a>
+        </div>
       </div>
-      <div>
-        <h2>OpenSource Work</h2>
-        <p>Contributed to 2 opensource projects. Made my own projects with 10 GitHub stars.</p>
-        <a href="#">Visit my GitHub profile</a>
+  
+      <div class="education">
+        <h2>Education</h2>
+        <p>Graduated with 5.00 out of 5 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
+        <p>Courses I took</p>
+        <ul>
+          <li>Object oriented programming</li>
+          <li>Data Structures and Algorithms</li>
+          <li>Web Engineering</li>
+          <li>Artificial Intelligence</li>
+          <li>Human Computer Interaction</li>
+          <li>Computer Graphics</li>
+          <li>Database Management Systems</li>
+          <li>Distributed Database Systems</li>
+          <li>Discreet Mathematics</li>
+        </ul>
       </div>
-    </div>
+    </section>
+  
+    <section class="reviews">
+      <h2>Reviews from my teachers</h2>
+      <div class="review-cards">
+        <div class="review-card">
+          <p>John Doe was a brilliant student; always stood out with his assignments.</p>
+          <p class="review-gray">Jane Doe</p>
+          <p class="review-gray">Assistant proffesor</p>
+        </div>
+        <div class="review-card">
+          <p>John Doe was a brilliant student; always stood out with his assignments.</p>
+          <p class="review-gray">Jane Doe</p>
+          <p class="review-gray">Assistant proffesor</p>
+        </div>
+        <div class="review-card">
+          <p>John Doe was a brilliant student; always stood out with his assignments.</p>
+          <p class="review-gray">Jane Doe</p>
+          <p class="review-gray">Assistant proffesor</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <div>
-      <h2>Education</h2>
-      <p>Graduated with 5.00 out of 5 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
-      <p>Courses I took</p>
-      <ul>
-        <li>Object oriented programming</li>
-        <li>Data Structures and Algorithms</li>
-        <li>Web Engineering</li>
-        <li>Artificial Intelligence</li>
-        <li>Human Computer Interaction</li>
-        <li>Computer Graphics</li>
-        <li>Database Management Systems</li>
-        <li>Distributed Database Systems</li>
-        <li>Discreet Mathematics</li>
-      </ul>
-    </div>
-  </section>
-
-  <section>
-    <h2>Reviews from my teachers</h2>
-    <div>
-      <div>
-        <p>John Doe was a brilliant student; always stood out with his assignments.</p>
-        <p>Jane Doe</p>
-        <p>Assistant proffesor</p>
-      </div>
-      <div>
-        <p>John Doe was a brilliant student; always stood out with his assignments.</p>
-        <p>Jane Doe</p>
-        <p>Assistant proffesor</p>
-      </div>
-      <div>
-        <p>John Doe was a brilliant student; always stood out with his assignments.</p>
-        <p>Jane Doe</p>
-        <p>Assistant proffesor</p>
-      </div>
-    </div>
-  </section>
 
   <footer>
     <p>© all rights reserved 2025</p>
