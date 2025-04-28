@@ -64,6 +64,7 @@ header nav {
 }
 .logo {
   height: 3rem;
+  aspect-ratio: 1/1;
 }
 .cover {
   display: flex;
@@ -133,7 +134,6 @@ header nav {
   padding: 1rem 3rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 }
 .education h2 {
   width: 100%;
@@ -142,6 +142,13 @@ header nav {
 }
 .education ul {
   list-style-position: inside;
+  padding: 1rem;
+}
+.education-info {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .reviews {
   padding: 0 3rem;
@@ -172,7 +179,9 @@ footer {
   padding: 2rem;
 }
 
-.projects-page {
+.projects-page,
+.articles,
+.contact {
   padding: 1.5rem 2.5rem;
   width: 100%;
   display: flex;
@@ -186,10 +195,12 @@ footer {
   flex-direction: column;
   gap: 2rem;
 }
-.projects-page-ul li {
+.projects-page-ul li,
+.contact-page-ul li {
   display: flex;
 }
-.projects-page-ul a {
+.projects-page-ul a,
+.contact-page-ul a {
   width: 100%;
   text-align: center;
 }
@@ -198,6 +209,12 @@ footer {
   list-style-type: none;
 }
 
+.contact-page-ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
 .contact ul {
   list-style-type: none;
 }
@@ -226,6 +243,12 @@ footer {
 .contact-frm button {
   height: 3rem;
   width: 20%;
+}
+
+@media (min-width: 350px) {
+  .contact-page-ul {
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 550px) {
@@ -288,7 +311,7 @@ footer {
   }
   .education {
     width: 40%;
-    padding: 0 2rem 2rem;
+    padding: 0 1rem;
   }
   .education h2 {
     text-align: left;
